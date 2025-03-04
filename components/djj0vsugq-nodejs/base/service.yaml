@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: djj0vsugq-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: djj0vsugq-nodejs 
+  name: djj0vsugq-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: djj0vsugq-nodejs 
